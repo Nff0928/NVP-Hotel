@@ -58,7 +58,7 @@ class Personal (models.Model):
     def __str__(self):
         return f" personal: {self.nombre} - hotel: {self.nombreHotel.nombre}"
 
-class Contact (models.Model):
+class Contact(models.Model):
     class OptionsContact(models.TextChoices):
         accommodation_quote = 'accommodation_quote', _('accommodation_quote')
         event_quote = 'event_quote', _('event_quote')
@@ -69,15 +69,15 @@ class Contact (models.Model):
         event_reservation = 'event_reservation', _('event_reservation')
         special_request = 'special_request', _('special_request')
 
-    name=models.CharField(max_length=200)
-    email=models.CharField(max_length=50)
-    phone=models.CharField(max_length=10)
-    subject=models.CharField(
+    name = models.CharField(max_length=200)
+    email = models.CharField(max_length=50)
+    phone = models.CharField(max_length=10)
+    subject = models.CharField(
+        max_length=100,  # Especifica la longitud máxima para el campo
         choices=OptionsContact.choices,
         default=OptionsContact.accommodation_quote,
     )
-    message=models.CharField(max_length=500)
-    
+    message = models.CharField(max_length=500)
 
 class Hoteles (models.Model):
     nombre=models.CharField(max_length=51)

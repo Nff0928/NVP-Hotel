@@ -1,0 +1,100 @@
+/* Estilos generales para las secciones */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f9fa; /* Fondo suave gris claro */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para la sección de reserva */
+.reserva-hotel {
+    background-color: #ffffff; /* Fondo blanco para resaltar el formulario */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.form-reserva {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #007bff; /* Color azul principal */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Azul claro */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Azul oscuro para el hover */
+}
+
+/* Estilos para la sección de información adicional */
+.info-hotel {
+    background-color: #ffffff; /* Fondo blanco para información adicional */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-hotel h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.info-hotel p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.info-hotel ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1em;
+}
+
+.info-hotel li {
+    color: #007bff; /* Color azul para puntos de la lista */
+    margin-bottom: 10px;
+}
